@@ -5,8 +5,10 @@ Write a program that takes an integer as input and returns true if the input is 
 
 from math import log2
 
+
 num = int(input("Enter a number: "))
 log_num = log2(num)
+
 
 if num.is_float():
     print(log_num and log_num.is_integer())
