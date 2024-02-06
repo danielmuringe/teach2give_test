@@ -12,4 +12,4 @@ for letter in sentence.lower():
         count += 1
 
 
-print(f"For the sentence: {sentence}\nThere are {count} vowels")
+print(f"In the sentence:\t{sentence}\nThere are {count} vowels")
