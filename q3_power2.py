@@ -3,14 +3,13 @@ Question 3: Power of Two
 Write a program that takes an integer as input and returns true if the input is a power of two
 """
 
-from math import log2
+num_input = input("Enter a number: ")
 
 
-num = int(input("Enter a number: "))
-log_num = log2(num)
+# Ensure its a integer number
+if (not num_input.isdigit()) or ("." in num_input):
+    print("Invalid input: Must be a positive integer number")
+    exit()
 
-
-if num.is_float():
-    print(log_num and log_num.is_integer())
-else:
-    print("Invalid input")
+num = int(num_input)
+print(num & (num - 1) == 0 and num != 0)  # Do bitwise AND operation and compare with 0
