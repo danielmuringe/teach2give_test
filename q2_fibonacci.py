@@ -16,11 +16,7 @@ while True:
     pairs[0] = pairs[1]
     pairs[1] = next_number
 
-    # Ensure there is no duplicate of 0 or 1
-    if next_number <= 1:
-        continue
-
     sequence.append(next_number)
 
 
-print(sequence)
+print(*sequence, sep="\n")

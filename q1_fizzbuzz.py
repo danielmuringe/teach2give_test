@@ -12,5 +12,7 @@ for i in range(1, 101):
     if i % 5 == 0:
         output += "Buzz"
 
-    if output:
-        print(output)
+    if not output:
+        output = i
+
+    print(output)
